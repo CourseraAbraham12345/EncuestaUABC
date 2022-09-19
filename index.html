@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Encuesta de satisfacción</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="container-contact100">
+		<div class="wrap-contact100">
+			<form name = "myForm" class="contact100-form validate-form" id = "sheetsdb-form" method="POST" onsubmit="return validateForm()" action="post.php" >
+				<span class="contact100-form-title">
+					<div class="row">
+						<div class="col" id="header1">
+							<center>
+								<h1>Bienvenido a la encuesta de satisfacción de la UABC.</h1>
+								<br>
+								<h2>Por favor, contesta las siguientes preguntas de la manera más honesta posible, gracias.</h2>
+								
+							</center>
+						</div>
+						
+					</div>
+		 <!--  Pregunta  -->
+		 <br>
+		 <div class="row">
+		
+			<div class="col">
+				<center>
+				<h2>Seleccione a la unidad en la que fue atendido:</h2>
+				</center>
+			<br>
+			</div>
+		   
+		</div>
+		<!--  Pregunta  -->
+	
+		<!-- Renglon de radiobuttons para elegir la unidad atendida -->
+		<div class="row">
+			<div id="centercon">
+			<select id = "xd1" name="select" class=" form-select form-select-lg">
+				<option value="Jefatura"selected>Jefatura</option>
+				<option value="Control Escolar">Control Escolar</option>
+				<option value="Credenciales">Credenciales</option>
+				<option value="Titulación">Titulación</option>
+				<option value="Digitalización">Digitalización</option>
+				<option value="Posgrado">Posgrado</option>
+			  </select>
+			</div>
+		</div>
+		<br>
+		<!-- Renglon de radiobuttons para elegir la unidad atendida -->
+		  <!--  Pregunta  -->
+		  <div class="row">
+			
+			<div class="col">
+				<center>
+				<h2>¿Como fue tu experiencia en el servicio recibido?</h2>
+				</center>
+			<br>
+			</div>
+		
+		</div>
+		<!--  Pregunta  -->
+	
+		<!-- Este renglon es la base para ir haciendo las preguntas de los cuestionarios -->
+		<div class="row">
+			<div class="col">
+				<table class="center">
+					<tr>
+						<td align="center">
+							<label>
+								<input type="radio" name="p1" id="p1" value="1" class="emojis">
+								<img src="images/face1.png" id="emoji">
+							</label>
+						</td>
+	
+						<td align="center">
+							<label>
+								<input type="radio" name="p1" id="p1" value="2" class="emojis">
+								<img src="images/face2.png" id="emoji">
+							</label>
+						</td>
+	
+						<td align="center">
+							<label>
+								<input type="radio" name="p1" id="p1" value="3" class="emojis">
+								<img src="images/face3.png" id="emoji">
+							</label>
+						</td>
+	
+						<td align="center">
+							<label>
+								<input type="radio" name="p1" id="p1" value="4" class="emojis">
+								<img src="images/face4.png" id="emoji">
+							</label>
+						</td>
+	
+						<td align="center">
+							<label>
+								<input type="radio" name="p1" id="p1" value="5" class="emojis">
+								<img src="images/face5.png" id="emoji">
+							</label>
+						</td>
+					</tr>
+				</table>
+				<br>
+			</div>
+		</div>
+			<!-- Este renglon es donde ire la caja de comentarios -->
+		<br>
+			<div class="form-outline">
+			</div>
+		<div class="row">
+			
+			<div class="col">
+				<center>
+				<h2>¡Dejanos saber tu opinion!, que consideras que se podria mejorar en las instalaciones</h2>
+				</center>
+				<br>
+			</div>
+		
+		</div>
+		
+  		<!-- <textarea class="form-control" name="texto" rows="4" placeholder = "Aqui va un comentario"></textarea> -->
+  		<!-- <label class="form-label" for="textAreaExample"></label> -->
+  		
+  		<input type="checkbox" id="comentario" name="com1" value="Equipo de computo">
+  		<label id="comentario"> Equipo de computo</label>
+  		
+  		<input type="checkbox" id="comentario" name="com1" value="Apariencia personal">
+  		<label id="comentario"> Apariencia personal</label> <br>
+  		
+  		<input type="checkbox" id="comentario" name="com1" value="Puntualidad en el servicio">
+  		<label id="comentario"> Puntualidad en el servicio</label> <br>
+  		
+  		<input type="checkbox" id="comentario" name="com1" value="Apoyo en el servicio recibido">
+  		<label id="comentario"> Apoyo en el servicio recibido</label> <br>
+  		
+  		<input type="checkbox" id="comentario" name="com1" value="Disposicion de ayuda">
+  		<label id="comentario"> Disposicion de ayuda</label> 
+		
+		<input type="checkbox" id="comentario" name="com1" value="Amabilidad">
+  		<label id="comentario"> Amabilidad</label> <br>
+  		
+  		<input type="checkbox" id="comentario" name="com1" value="Nada">
+  		<label id="comentario"> El servicio fue excelente</label> 
+		<!-- Este renglon es donde ire la caja de comentarios -->
+		<!-- Este renglon es la base para ir haciendo las preguntas de los cuestionarios -->
+				</span>
+				<div class="center">
+				<button type="submit" value="submit" name="sumbit" class="contact100-form-btn">Enviar respuestas</button>
+				</div>
+	
+			
+			</form>
+		</div>
+	</div>
+
+
+
+<!--===============================================================================================-->
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/daterangepicker/moment.min.js"></script>
+	<script src="vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-23581568-13');
+</script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
+<script>
+
+
+ 
+ function realsubmit(value1, value2, value3){
+
+ axios.post('https://sheetdb.io/api/v1/26b73xc0czqa5',{
+ 	
+	"data": {"select":value1, "p1": value2, "com1": value3}
+		    }).then( response => {
+			console.log(response.data);
+			
+		    });
+		    }
+</script>
+<script>
+
+
+
+function validateForm(){
+		var x1 = document.forms["myForm"]["p1"].value;
+		if(x1 == "" || x1 == null){
+			alert("Favor de llenar todos los campos correspondientes.");
+			return false;
+		}
+		
+		var x2 = document.querySelectorAll('input[type=checkbox]:checked');
+		if(x2.length <= 0){
+		      alert("Favor de llenar todos los campos correspondientes.");
+		      return false;
+		    }
+		else{
+		var e = document.getElementById("xd1");
+		var value = e.options[e.selectedIndex].value;
+		var text = e.options[e.selectedIndex].text;
+		
+		var value2 = $("input[name=p1]:checked").val();
+		
+		    let checkboxes = document.querySelectorAll('input[name="com1"]:checked');
+		    let output = [];
+		    checkboxes.forEach((checkbox) => {
+		        output.push(checkbox.value);
+		    });
+		    var values3 = output.join(", ");
+           
+		realsubmit(text, value2, values3);
+		}
+		    
+	}
+
+</script>
+
+
+</body>
+</html>
